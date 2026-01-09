@@ -1,0 +1,24 @@
+[package]
+name = "spark-companion-amm"
+version = "1.0.0"
+description = "SparkCompanion AMM - Concentrated Liquidity Market Maker"
+edition = "2021"
+license = "MIT"
+authors = ["SparkCompanion Team <info@sparkcompanion.com>"]
+repository = "https://github.com/sparkcompanion/spark-companion"
+keywords = ["solana", "amm", "clmm", "defi", "liquidity"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "spark_companion_amm"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"

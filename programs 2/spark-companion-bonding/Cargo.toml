@@ -1,0 +1,24 @@
+[package]
+name = "spark-companion-bonding"
+version = "1.0.0"
+description = "SparkCompanion Bonding Curve - Decentralized Token Launch Platform"
+edition = "2021"
+license = "MIT"
+authors = ["SparkCompanion Team <info@sparkcompanion.com>"]
+repository = "https://github.com/sparkcompanion/spark-companion"
+keywords = ["solana", "bonding-curve", "defi", "token-launch"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "spark_companion_bonding"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.29.0"
+anchor-spl = "0.29.0"
